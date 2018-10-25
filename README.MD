@@ -1,6 +1,6 @@
 # Install an configure Free IPA Server
 
-Centralize the authentication of your linux servers with Free IPA and have full access control on your server farm, use this playbook to install and configure a Free IPA server on your linux server. 
+Manage Linux users and client hosts in your realm from one central location with CLI, Web UI or RPC access. Enable Single Sign On authentication for all your systems, services and applications.
 
 # What we will do
   - Configure server hostname
