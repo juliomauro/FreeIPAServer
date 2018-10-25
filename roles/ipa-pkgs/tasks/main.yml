@@ -1,0 +1,15 @@
+---
+# tasks file for server
+- name: Install IPA Packages
+  yum:
+     name: "{{ item }}"
+     state: latest
+  become: yes
+  with_items:
+     - ipa-client
+     - ipa-client-common
+     - python2-ipaclient
+     - ipa-server
+     - ipa-server-common
+     - ipa-server-dns
+     - python2-ipaserver

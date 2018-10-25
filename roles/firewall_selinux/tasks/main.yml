@@ -1,0 +1,11 @@
+---
+# tasks file for server
+- name: Disable selinux
+  selinux:
+    state: disabled
+
+- name: Disable firewalld
+  systemd:
+    state: stopped
+    name: firewalld
+    enabled: no

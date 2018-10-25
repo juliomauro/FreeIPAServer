@@ -1,0 +1,11 @@
+---
+# tasks file for server
+- name: Change hostname
+  hostname:
+    name: "{{ hostname }}"
+
+- name: Change hosts file
+  lineinfile:
+    dest: /etc/hosts
+    line: "{{ ansible_default_ipv4.address }} {{ hostname }}"
+    state: present

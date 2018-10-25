@@ -1,0 +1,13 @@
+---
+# tasks file for server
+#
+#
+
+- name: include vars from file
+  include_vars:
+    file: "vars/default.yml"
+
+- name: Configuring IPA server
+  command: ipa-server-install -n {{ ipaserver_domain }} -r {{ ipaserver_domain|upper }} --hostname={{ hostname }} --no-host-dns --setup-dns --mkhomedir --allow-zone-overlap --no-reverse --auto-forwarders -p {{ ipaadmin_password }} -a {{ ipaadmin_password }} -U
+  ignore_errors: yes
+  become: yes
