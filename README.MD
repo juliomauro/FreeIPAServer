@@ -1,6 +1,9 @@
 # Install an configure Free IPA Server
 
+# What is Free IPA?
 Manage Linux users and client hosts in your realm from one central location with CLI, Web UI or RPC access. Enable Single Sign On authentication for all your systems, services and applications.
+Define Kerberos authentication and authorization policies for your identities. Control services like DNS, SUDO, SELinux or autofs.
+Create mutual trust with other Identity Management systems like Microsoft Active Directory.
 
 # What we will do
   - Configure server hostname
